@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./checkout.css" />
+    <script
+      src="https://kit.fontawesome.com/6a9f2636d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-main">
+        <div class="container-fluid">
+          <nav class="navbar">
+            <div class="left-nav">
+              <a href="./home.html">
+                <img
+                  src="./images/organic-store-logo5.svg"
+                  alt=""
+                  width="100px"
+              /></a>
+              <ul class="left-list">
+                <li class="left-list-items"><a href="./home.html">Everything</a></li>
+                <li class="left-list-items"><a href="#">Groceries</a></li>
+                <li class="left-list-items"><a href="#">Juice</a></li>
+              </ul>
+            </div>
+
+            <div class="right-nav">
+              <ul class="right-list">
+                <li class="right-list-items"><a href="#">About</a></li>
+                <li class="right-list-items"><a href="#">Contact</a></li>
+                <li class="right-list-items">
+                  <a href="./viewcart.html">
+                    <i
+                      class="fa-solid fa-cart-shopping cart"
+                      style="color: rgb(120, 196, 7)"
+                    ></i
+                  ></a>
+                </li>
+                <li class="right-list-items">
+                  <a href="#"> <i class="fa-solid fa-user user"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <a class="login"><i class="fa-solid fa-user user"></i></a>
+            <button onclick="nav()" class="nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <section class="checkout-section">
+        <div class="container-checkout">
+            <div class="header">
+                <h2>Checkout</h2>
+              </div>
+          <div class="pay-requirements">
+            <div class="billing-detail">
+              <h2>Billing Details</h2>
+              <form action="" class="checkout-form">
+                <div class="flex-inputs">
+                  <div class="form-group col6">
+                    <label for="fname"
+                      >First Name <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <input type="text" name="fname" />
+                  </div>
+                  <div class="form-group col6">
+                    <label for="lname"
+                      >Last Name <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <input type="text" name="lname" />
+                  </div>
+
+                  <div class="form-group col12">
+                    <label for="Cname"
+                      >Company Name (Optional)
+                      <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <input type="text" name="fname" />
+                  </div>
+
+                  <div class="form-group col12">
+                    <label for="country"
+                      >Country / Region <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <select name="Country">
+                      <option value>Select a Country</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AF">Afghanistan</option>
+                    </select>
+                  </div>
+                  <div class="form-group col12">
+                    <label for="city"
+                      >City <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <select name="Country">
+                      <option value>Select a City</option>
+                      <option value="LA">Lahore</option>
+                      <option value="LA">Lahore</option>
+                      <option value="LA">Lahore</option>
+                      <option value="LA">Lahore</option>
+                      <option value="LA">Lahore</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col12">
+                    <label for="address"
+                      >Postcode/ZIP <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <input type="text" name="address" />
+                  </div>
+                  <div class="form-group col12">
+                    <label for="address"
+                      >Street Address <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <input
+                      type="text"
+                      name="address"
+                      placeholder="House number and street name"
+                    />
+                  </div>
+                  <div class="form-group col12">
+                    <label for="email"
+                      >Email Address <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <input type="email" name="address" />
+                  </div>
+                  <div class="form-group col12">
+                    <label for="phone"
+                      >Phone <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <input type="tel" name="address" />
+                  </div>
+                  <div class="form-group col12">
+                    <h2>Additional information</h2>
+                  </div>
+                  <div class="form-group col12">
+                    <label for="phone"
+                      >Order Notes (Optional)
+                      <i class="fa-solid fa-asterisk"></i
+                    ></label>
+                    <textarea placeholder="write something"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="your-order">
+              <h1>Your Order</h1>
+              <div class="order-table">
+                <table class="shop-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Farm Fresh Eggs
+                            </td>
+                            <td>$ 25.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Subtotal
+                            </td>
+                            <td>$ 25.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total
+                            </td>
+                            <td>$ 25.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="check-cash">
+                    <ul>
+                        <li>
+                            <input type="radio" checked="checked">
+                            <label for=""> Cash Payment</label>
+                        </li>
+                        <li>
+                            <input type="radio">
+                            <label for=""> Cash on delivery</label>
+                        </li>
+                    </ul>
+                    <a href="./home.html"> <button class="order-btn">Place Order</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="sec aboutus">
+              <h2>About Us</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Delectus voluptatibus commodi excepturi nihil enim eum incidunt
+                tenetur molestias eos illum? Ex suscipit quis libero quas?
+              </p>
+              <ul class="sci">
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="sec quicklinks">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+              </ul>
+            </div>
+
+            <div class="sec quicklinks">
+              <h2>Site Links</h2>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Shipping Details</a></li>
+                <li><a href="#">Offer Coupons</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+              </ul>
+            </div>
+
+            <div class="sec contact">
+              <h2>Contact Us</h2>
+
+              <ul class="quick-contact-list">
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <a class="phone-number" href="tel:02094857568"
+                    >020 9485 7568</a
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:info@beautain.com">info@beautain.com</a>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> 85 Royal Street,<br />Sydney<br />SD,
+                  Australia.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <hr />
+      <div class="copyright-text">
+        <p>Copyright © 2023 | Organic Store. All Rights Reserved</p>
+      </div>
+    </div>
+
+    <script>
+      function nav() {
+        let nav = document.querySelector(".left-list");
+
+        nav.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

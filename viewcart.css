@@ -1,0 +1,503 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container-fluid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 28px;
+    padding-left: 28px;
+}
+.left-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row;*/
+}
+.left-nav img:hover{
+    cursor: pointer;
+}
+
+.left-nav img{
+    width: 150px;
+}
+
+.left-list{
+    display: flex;
+    list-style: none;
+}
+.left-list .left-list-items a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.left-list-items{
+    line-height: 50px;
+}
+.right-nav{
+    position: relative;
+}
+.right-nav .right-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-nav .right-list {
+    list-style: none;
+}
+.right-nav .right-list .right-list-items a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.right-nav .right-list .right-list-items a:hover{
+    color: rgb(25, 202, 25);
+    transition: 0.5s;
+}
+.left-list .left-list-items a:hover{
+    color: rgb(25, 202, 25);
+    transition: 0.5s;
+
+}
+
+.nav-toggle{
+    line-height: 8px;
+      height: 30px;
+      width: 30px;
+      background: #0000;
+      color: rgb(120, 196, 7);
+      font-size: 26px;
+      display: none;
+      /* outline: none; */
+      border: 1px solid white;
+      border-radius: 5px;
+  }
+  .login{
+    line-height: 8px;
+    height: 30px;
+    width: 30px;
+    background: #0000;
+    color: rgb(120, 196, 7);
+    font-size: 26px;
+    display: none;
+    /* outline: none; */
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  @media screen and (max-width: 930px){
+   
+   
+    .left-list{
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+    background-color: white;
+    box-shadow: -5px 7px 12px -6px rgba(0,0,0,0.75);
+        z-index: 99;
+    }
+  .right-nav{
+    display: none;
+  }
+    
+
+    .nav-toggle{
+        display: inline-block;
+        }
+        .login{
+            display: inline-block;
+            position: absolute;
+            right: 70px;
+        }
+  
+    .left-nav img{
+        width: 120px;
+    }
+  }
+  
+.show{
+    display: block;
+   
+  }
+
+
+ 
+
+
+/* ================================== */
+/*            4th section             */
+/* ================================== */
+
+
+.section4{
+    background-color: #f8f6f3;
+    padding: 35px 20px 75px;
+ }
+
+ .header h2{
+    font-size: 34px;
+ }
+
+ .container-section4{
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ .section4 table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #d9d9d9;
+ }
+ /* .section4{
+    overflow-x: auto;
+ } */
+ .section4 table img{
+    width: 70px;
+ }
+ .section4 table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+ }
+ .section4 table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+ }
+ .section4 table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+ }
+ .section4 table td:nth-child(4),  
+ .section4 table td:nth-child(5),  
+ .section4 table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+ }
+ .section4 table td:nth-child(5) input{
+    width: 50px;
+    padding: 10px 5px 10px 15px;
+ }
+
+ .section4 table thead{
+    /* border: 1px solid grey; */
+    border-left: none;
+    background-color: #fbfbfb;
+ }
+ .section4 table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 18px 0px;
+ }
+ .section4 table tbody tr td{
+    padding: 15px 0px;
+    border-top: 1px solid #d9d9d9;
+ }
+ .section4 table tbody td{
+    font-size: 13px;
+ }
+ .section4 table td a{
+    text-decoration: none;
+ }
+ .section4 table td a i{
+    color: grey;
+    font-size: 18px;
+ }
+
+
+
+ .coupon-section{
+    background-color: #f8f6f3;
+    padding: 20px 20px 20px;
+ }
+
+
+ .container-coupon{
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ .coupon-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+.coupon{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.coupon h3,
+.subtotal h3{
+   padding-bottom: 15px;
+}
+.coupon input{
+    padding: 15px 25px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+.coupon button{
+    background-color: #40a340;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+
+}
+.coupon-flex{
+    display: flex;
+}
+
+
+.subtotal{
+    width: 40%;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+}
+.subtotal .sub{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.subtotal .sub td{
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #d9d9d9;
+
+
+}
+.subtotal .coupon-btn{
+    /* display: flex; */
+    background-color: #40a340;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+
+}
+
+
+
+ 
+@media screen and (max-width: 960px){
+    .cards-section4{
+        justify-content: center;
+    }
+    .items{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .cards-section4 .items{
+    
+        width: 250px;
+       
+     }
+}
+@media screen and (max-width: 850px){
+   
+   
+    .section4 .res thead {
+       display: none;
+     }
+     .section4 .res tr{
+        display: block;
+     }  
+     .section4 .res tr td::before{
+        content: attr(data-lable);
+        font-weight: 700;
+    float: left;
+     }
+     .section4 .res td{
+        display: block;
+        /* vertical-align: middle; */
+     }   
+     .section4 table td:nth-child(1){
+        width: calc(100% - 10px);
+
+        text-align: right;
+     }
+     .section4 table td:nth-child(2){
+        width: calc(100% - 10px);
+
+        text-align: center;
+     }
+     .section4 table td:nth-child(3){
+        width: calc(100% - 10px);
+
+        text-align: right;
+     }
+     .section4 table td:nth-child(4),  
+     .section4 table td:nth-child(5),  
+     .section4 table td:nth-child(6){
+        width: calc(100% - 10px);
+
+        text-align: right;
+     }
+     .section4 table td:nth-child(5) input{
+        width: 25px;
+        padding: 10px 5px 10px 15px;
+     }  
+     .coupon-parent{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+     .coupon, .subtotal{
+        width: 70%;
+     }
+    
+     
+}
+@media screen and (max-width: 650px){
+    .coupon-flex{
+        flex-wrap: wrap;
+    }
+    .coupon input{
+       margin-bottom: 10px;
+    }
+    .subtotal .coupon-btn{
+display: flex;
+margin: auto;
+width: 50%;
+    }
+
+}
+
+
+
+/* ==================================== */
+/*            Footer Section            */
+/* ==================================== */
+
+footer{
+    background-color: #1d1930;
+    padding: 55px 0px; 
+    color: white;
+ }
+ .footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ .footer-content{
+       display: flex;
+       /* width: 100%; */
+       align-items: center;
+       /* margin-top: 60px; */
+       justify-content: space-evenly;
+    
+ }
+ .footer-content .aboutus{
+    color: white;
+    max-width: 300px;
+ }
+ .footer-content .aboutus ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0px;
+ }
+ .footer-content .aboutus ul li{
+    margin: 0px 15px;
+ 
+ }
+ .footer-content .aboutus ul li a{
+    font-size: 25px;
+    text-decoration: none;
+  
+ }
+ .footer-content .aboutus ul li a .fa-brands:hover{
+    color: #40a340;
+  
+ }
+ .footer-content .aboutus ul li a .fa-brands{
+    color: white;
+ }
+ .footer-content .quicklinks ul{
+    list-style: none;
+     padding-left: 0;
+ }
+ .footer-content .quicklinks ul li{
+  
+   margin-bottom: 10px;
+ }
+ .footer-content .quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer-content .quicklinks ul li a:hover{
+    color: #40a340;
+  }
+  .contact{
+    align-self: flex-start;
+  }
+ .quick-contact-list{
+    list-style: none;
+    padding-left: 0px;
+ }
+ .quick-contact-list li{
+   margin-bottom: 10px;
+ }
+ .quick-contact-list li a{
+    text-decoration: none;
+    color: white;
+  }
+ 
+ .copyright-text{
+    background-color: #1d1930;
+    padding: 25px 0px; 
+ 
+ }
+ .copyright-text p{
+ 
+    color: white;
+    text-align: center;
+ }
+ 
+ hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+ .copyright-text p{
+   margin-top: 0px;
+   margin-bottom: 0px;
+ }
+ 
+ 
+ @media screen and (max-width: 850px){
+    .footer-content{
+       flex-wrap: wrap;
+    }
+ }
+ @media screen and (max-width: 445px){
+    .footer-content .aboutus{
+       text-align: center;
+    }
+    .footer-content .aboutus ul {
+       /* flex-wrap: wrap; */
+       flex-direction: column;
+    }
+ }
